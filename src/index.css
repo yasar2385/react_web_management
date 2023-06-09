@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: 'translateX(100%)'
+    }
+
+    100% {
+        transform: 'translateX(0%)'
+    }
+}
+
+@keyframes marquee1 {
+    0% {
+        transform: 'translateX(0%)'
+    }
+
+    100% {
+        transform: 'translateX(-100%)'
+    }
+}
+
+div.marquee1 {
+    position: relative;
+    animation-name: marquee1;
+    animation-duration: 25s;
+}
+
+div.marquee2 {
+    position: relative;
+    animation-name: marquee2;
+    animation-duration: 25s;
+}
+
+@media (min-width: 540px) {
+    .md\:h-carousel {
+        height: 42rem;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .lg\:-mx-c21 {
+        margin-left: -21rem !important;
+        margin-right: -21rem !important;
+    }
+
+    .lg\:h-carousel {
+        height: 49.5rem;
+    }
+
+}
